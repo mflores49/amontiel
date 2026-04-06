@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soluciones Integrales en Arquitectura e Ingeniería | Chile</title>
+  <meta name="description"
+    content="Empresa de servicios de Arquitectura e Ingeniería en Chile. Diseñamos, proyectamos y ejecutamos con precisión técnica. Planos, proyectos, ingeniería estructural, sanitaria y eléctrica.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#" class="navbar__logo">
+        <img src="logoam.png" alt="A&M" class="navbar__logo-img">
+      </a>
+      <button class="navbar__toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="navbar__menu" id="navMenu">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#proceso">Proceso</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#cta" class="btn btn--nav">Cotizar Proyecto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <header class="hero" id="hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__particles" id="heroParticles"></div>
+    <div class="container hero__content">
+      <span class="hero__badge animate-on-scroll">
+        <i class="fa-solid fa-award"></i> Más de 15 años de experiencia
+      </span>
+      <h1 class="hero__title animate-on-scroll">
+        Soluciones Integrales en<br>
+        <span class="gradient-text">Arquitectura e Ingeniería</span>
+      </h1>
+      <p class="hero__subtitle animate-on-scroll">
+        Diseñamos, proyectamos y ejecutamos con precisión técnica.<br>
+        Acompañamos cada etapa de su proyecto con excelencia profesional.
+      </p>
+      <div class="hero__actions animate-on-scroll">
+        <a href="#cta" class="btn btn--primary btn--lg">
+          <i class="fa-solid fa-file-pen"></i> Solicitar Cotización
+        </a>
+        <a href="#servicios" class="btn btn--outline btn--lg">
+          <i class="fa-solid fa-arrow-down"></i> Ver Servicios
+        </a>
+      </div>
+      <div class="hero__stats animate-on-scroll">
+        <div class="hero__stat">
+          <span class="hero__stat-number" data-count="500">0</span>+
+          <span class="hero__stat-label">Proyectos Realizados</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-number" data-count="15">0</span>+
+          <span class="hero__stat-label">Años de Experiencia</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-number" data-count="98">0</span>%
+          <span class="hero__stat-label">Clientes Satisfechos</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll-indicator">
+      <a href="#servicios"><i class="fa-solid fa-chevron-down"></i></a>
+    </div>
+  </header>
+
+  <!-- ========== SERVICIOS ========== -->
+  <section class="services" id="servicios">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag"><i class="fa-solid fa-layer-group"></i> Nuestros Servicios</span>
+        <h2 class="section-title">Servicios Profesionales<br><span class="gradient-text">a su Medida</span></h2>
+        <p class="section-desc">Ofrecemos soluciones completas en arquitectura, ingeniería y proyectos técnicos para
+          clientes particulares, empresas y proyectos inmobiliarios.</p>
+      </div>
+
+      <!-- Tabs -->
+      <div class="services-tabs animate-on-scroll">
+        <button class="tab-btn active" data-tab="planos">
+          <i class="fa-solid fa-drafting-compass"></i> Planos &amp; Proyectos
+        </button>
+        <button class="tab-btn" data-tab="arquitectura">
+          <i class="fa-solid fa-building"></i> Arquitectura
+        </button>
+        <button class="tab-btn" data-tab="ingenieria">
+          <i class="fa-solid fa-gears"></i> Ingeniería
+        </button>
+      </div>
+
+      <!-- Tab: Planos & Proyectos -->
+      <div class="services-grid tab-content active" id="tab-planos">
+        <div class="service-card animate-on-scroll">
+          <div class="service-card__icon"><i class="fa-solid fa-ruler-combined"></i></div>
+          <h3 class="service-card__title">Levantamiento de Edificaciones</h3>
+          <p class="service-card__desc">Medición y representación precisa de construcciones existentes para documentar
+            su estado actual y planificar intervenciones.</p>
+          <div class="service-card__line"></div>
+        </div>
+        <div class="service-card animate-on-scroll">
+          <div class="service-card__icon"><i class="fa-solid fa-file-lines"></i></div>
+          <h3 class="service-card__title">Informes Técnicos de Obra</h3>
+          <p class="service-card__desc">Documentación detallada del estado constructivo, cumplimiento normativo y
+            recomendaciones técnicas para su proyecto.</p>
+          <div class="service-card__line"></div>
+        </div>
+        <div class="service-card animate-on-scroll">
+          <div class="service-card__icon"><i class="fa-solid fa-map-location-dot"></i></div>
+          <h3 class="service-card__title">Subdivisión Rural y Urbana</h3>
+          <p class="service-card__desc">Gestión y desarrollo de proyectos de subdivisión de terrenos conforme a la
+            normativa vigente, urbana y rural.</p>
+          <div class="service-card__line"></div>
+        </div>
+        <div class="service-card animate-on-scroll">
+          <div class="service-card__icon"><i class="fa-solid fa-mountain-city"></i></div>
+          <h3 class="service-card__title">Factibilidad de Construcción Rural (IFC)</h3>
+          <p class="service-card__desc">Evaluación integral de viabilidad constructiva en zonas rurales, considerando
+            normativa, accesos y servicios básicos.</p>
+          <div class="service-card__line"></div>
+        </div>
+        <div class="service-card animate-on-scroll">
+          <div class="service-card__icon"><i class="fa-solid fa-road"></i></div>
+          <h3 class="service-card__title">Urbanización Pública y Domiciliaria</h3>
+          <p class="service-card__desc">Diseño e implementación de obras de urbanización para loteos, condominios y
+            proyectos habitacionales.</p>
+          <div class="service-card__line"></div>
+        </div>
+        <div class="service-card animate-on-scroll">
+          <div class="service-card__icon"><i class="fa-solid fa-road-barrier"></i></div>
+          <h3 class="service-card__title">Pavimentación y Aguas Lluvia</h3>
+          <p class="service-card__desc">Proyectos de pavimentación vial y sistemas de drenaje de aguas lluvia con
+            estándares de calidad y normativa.</p>
+          <div class="service-card__line"></div>
+        </div>
+        <div class="service-card animate-on-scroll">
+          <div class="service-card__icon"><i class="fa-solid fa-droplet"></i></div>
+          <h3 class="service-card__title">Agua Potable y Alcantarillado</h3>
+          <p class="service-card__desc">Diseño de redes de agua potable y sistemas de alcantarillado según normativa
+            sanitaria vigente.</p>
+          <div class="service-card__line"></div>
+        </div>
+        <div class="service-card animate-on-scroll">
+          <div class="service-card__icon"><i class="fa-solid fa-clipboard-check"></i></div>
+          <h3 class="service-card__title">Factibilidades de Suministro</h3>
+          <p class="service-card__desc">Gestión y obtención de certificados de factibilidad ante empresas de servicios
+            básicos y sanitarios.</p>
+          <div class="service-card__line"></div>
+        </div>
+        <div class="service-card animate-on-scroll">
+          <div class="service-card__icon"><i class="fa-solid fa-bolt"></i></div>
+          <h3 class="service-card__title">Sistemas de Red Baja y Media Tensión</h3>
+          <p class="service-card__desc">Diseño y proyectos eléctricos de distribución en baja y media tensión para uso
+            residencial e industrial.</p>
+          <div class="service-card__line"></div>
+        </div>
+        <div class="service-card animate-on-scroll">
+          <div class="service-card__icon"><i class="fa-solid fa-video"></i></div>
+          <h3 class="service-card__title">Sistemas de Cámaras y Citofonía</h3>
+          <p class="service-card__desc">Proyectos de seguridad electrónica, videovigilancia y sistemas de comunicación
+            interna para edificaciones.</p>
+          <div class="service-card__line"></div>
+        </div>
+      </div>
+
+      <!-- Tab: Arquitectura -->
+      <div class="services-grid services-grid--3 tab-content" id="tab-arquitectura">
+        <div class="service-card service-card--featured animate-on-scroll">
+          <div class="service-card__badge">Arquitectura</div>
+          <div class="service-card__icon service-card__icon--arq"><i class="fa-solid fa-house-chimney"></i></div>
+          <h3 class="service-card__title">Habitacional</h3>
+          <p class="service-card__desc">Diseño arquitectónico de viviendas unifamiliares, condominios y edificios
+            residenciales. Desde la conceptualización hasta los planos de detalle, creamos espacios que combinan
+            funcionalidad y estética.</p>
+          <ul class="service-card__features">
+            <li><i class="fa-solid fa-check"></i> Viviendas unifamiliares</li>
+            <li><i class="fa-solid fa-check"></i> Condominios</li>
+            <li><i class="fa-solid fa-check"></i> Edificios residenciales</li>
+            <li><i class="fa-solid fa-check"></i> Ampliaciones y remodelaciones</li>
+          </ul>
+          <div class="service-card__line"></div>
+        </div>
+        <div class="service-card service-card--featured animate-on-scroll">
+          <div class="service-card__badge">Arquitectura</div>
+          <div class="service-card__icon service-card__icon--arq"><i class="fa-solid fa-store"></i></div>
+          <h3 class="service-card__title">Comercial</h3>
+          <p class="service-card__desc">Proyectos de arquitectura comercial que potencian la experiencia del cliente y
+            optimizan los flujos operativos. Locales, oficinas, centros comerciales y espacios de retail.</p>
+          <ul class="service-card__features">
+            <li><i class="fa-solid fa-check"></i> Locales comerciales</li>
+            <li><i class="fa-solid fa-check"></i> Oficinas corporativas</li>
+            <li><i class="fa-solid fa-check"></i> Centros comerciales</li>
+            <li><i class="fa-solid fa-check"></i> Restaurantes y retail</li>
+          </ul>
+          <div class="service-card__line"></div>
+        </div>
+        <div class="service-card service-card--featured animate-on-scroll">
+          <div class="service-card__badge">Arquitectura</div>
+          <div class="service-card__icon service-card__icon--arq"><i class="fa-solid fa-industry"></i></div>
+          <h3 class="service-card__title">Industrial</h3>
+          <p class="service-card__desc">Diseño de plantas industriales, bodegas, galpones y espacios productivos.
+            Soluciones funcionales que cumplen con exigencias técnicas y normativas del sector.</p>
+          <ul class="service-card__features">
+            <li><i class="fa-solid fa-check"></i> Plantas industriales</li>
+            <li><i class="fa-solid fa-check"></i> Bodegas y galpones</li>
+            <li><i class="fa-solid fa-check"></i> Centros logísticos</li>
+            <li><i class="fa-solid fa-check"></i> Infraestructura productiva</li>
+          </ul>
+          <div class="service-card__line"></div>
+        </div>
+      </div>
+
+      <!-- Tab: Ingeniería -->
+      <div class="services-grid services-grid--3 tab-content" id="tab-ingenieria">
+        <div class="service-card service-card--featured animate-on-scroll">
+          <div class="service-card__badge">Ingeniería</div>
+          <div class="service-card__icon service-card__icon--ing"><i class="fa-solid fa-helmet-safety"></i></div>
+          <h3 class="service-card__title">Estructural</h3>
+          <p class="service-card__desc">Cálculo estructural, memorias de cálculo y diseño sismo-resistente. Garantizamos
+            la seguridad y estabilidad de su edificación con las normativas chilenas vigentes.</p>
+          <ul class="service-card__features">
+            <li><i class="fa-solid fa-check"></i> Cálculo sismo-resistente</li>
+            <li><i class="fa-solid fa-check"></i> Memorias de cálculo</li>
+            <li><i class="fa-solid fa-check"></i> Revisión estructural</li>
+            <li><i class="fa-solid fa-check"></i> Reforzamiento</li>
+          </ul>
+          <div class="service-card__line"></div>
+        </div>
+        <div class="service-card service-card--featured animate-on-scroll">
+          <div class="service-card__badge">Ingeniería</div>
+          <div class="service-card__icon service-card__icon--ing"><i class="fa-solid fa-faucet-drip"></i></div>
+          <h3 class="service-card__title">Sanitaria</h3>
+          <p class="service-card__desc">Proyectos de instalaciones sanitarias: agua potable, alcantarillado, aguas
+            lluvia y tratamiento de residuos. Cumplimiento normativo y eficiencia hídrica.</p>
+          <ul class="service-card__features">
+            <li><i class="fa-solid fa-check"></i> Agua potable</li>
+            <li><i class="fa-solid fa-check"></i> Alcantarillado</li>
+            <li><i class="fa-solid fa-check"></i> Aguas lluvia</li>
+            <li><i class="fa-solid fa-check"></i> Sistemas de tratamiento</li>
+          </ul>
+          <div class="service-card__line"></div>
+        </div>
+        <div class="service-card service-card--featured animate-on-scroll">
+          <div class="service-card__badge">Ingeniería</div>
+          <div class="service-card__icon service-card__icon--ing"><i class="fa-solid fa-plug-circle-bolt"></i></div>
+          <h3 class="service-card__title">Eléctrica</h3>
+          <p class="service-card__desc">Diseño de instalaciones eléctricas domiciliarias e industriales. Proyectos de
+            iluminación, fuerza, corrientes débiles y sistemas de respaldo energético.</p>
+          <ul class="service-card__features">
+            <li><i class="fa-solid fa-check"></i> Instalaciones domiciliarias</li>
+            <li><i class="fa-solid fa-check"></i> Proyectos industriales</li>
+            <li><i class="fa-solid fa-check"></i> Iluminación y fuerza</li>
+            <li><i class="fa-solid fa-check"></i> Corrientes débiles</li>
+          </ul>
+          <div class="service-card__line"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== POR QUÉ ELEGIRNOS ========== -->
+  <section class="why-us" id="nosotros">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag"><i class="fa-solid fa-star"></i> Nuestra Propuesta de Valor</span>
+        <h2 class="section-title">¿Por qué <span class="gradient-text">Elegirnos</span>?</h2>
+        <p class="section-desc">Combinamos experiencia técnica, compromiso y un enfoque integral para entregar
+          resultados excepcionales en cada proyecto.</p>
+      </div>
+      <div class="why-us__grid">
+        <div class="why-card animate-on-scroll">
+          <div class="why-card__number">01</div>
+          <div class="why-card__icon"><i class="fa-solid fa-medal"></i></div>
+          <h3 class="why-card__title">Experiencia Técnica</h3>
+          <p class="why-card__desc">Equipo multidisciplinario con amplia trayectoria en proyectos complejos de
+            arquitectura e ingeniería en todo Chile.</p>
+        </div>
+        <div class="why-card animate-on-scroll">
+          <div class="why-card__number">02</div>
+          <div class="why-card__icon"><i class="fa-solid fa-scale-balanced"></i></div>
+          <h3 class="why-card__title">Cumplimiento Normativo</h3>
+          <p class="why-card__desc">Todos nuestros proyectos se desarrollan bajo estricto cumplimiento de la normativa
+            chilena vigente y estándares internacionales.</p>
+        </div>
+        <div class="why-card animate-on-scroll">
+          <div class="why-card__number">03</div>
+          <div class="why-card__icon"><i class="fa-solid fa-puzzle-piece"></i></div>
+          <h3 class="why-card__title">Soluciones Integrales</h3>
+          <p class="why-card__desc">Abordamos cada proyecto de forma holística, coordinando todas las especialidades
+            para una ejecución fluida y sin contratiempos.</p>
+        </div>
+        <div class="why-card animate-on-scroll">
+          <div class="why-card__number">04</div>
+          <div class="why-card__icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h3 class="why-card__title">Optimización de Costos</h3>
+          <p class="why-card__desc">Diseñamos soluciones eficientes que maximizan su inversión sin comprometer la
+            calidad ni la seguridad del proyecto.</p>
+        </div>
+        <div class="why-card animate-on-scroll">
+          <div class="why-card__number">05</div>
+          <div class="why-card__icon"><i class="fa-solid fa-handshake"></i></div>
+          <h3 class="why-card__title">Acompañamiento Completo</h3>
+          <p class="why-card__desc">Estamos con usted desde la primera consulta hasta la entrega final. Comunicación
+            transparente y seguimiento en cada etapa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROYECTOS DESTACADOS ========== -->
+  <section class="projects" id="proyectos">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag"><i class="fa-solid fa-images"></i> Portafolio</span>
+        <h2 class="section-title">Proyectos <span class="gradient-text">Destacados</span></h2>
+        <p class="section-desc">Conoce algunos de los proyectos que hemos desarrollado con excelencia y compromiso
+          profesional en la zona sur de Chile.</p>
+      </div>
+      <div class="projects__grid">
+        <div class="project-card project-card--wide animate-on-scroll">
+          <img src="1775177834767.png" alt="Edificios residenciales con vista al lago" loading="lazy">
+          <div class="project-card__overlay">
+            <span class="project-card__tag">Habitacional</span>
+            <h3 class="project-card__title">Complejo Residencial en Altura</h3>
+            <p class="project-card__desc">Proyecto de edificios residenciales con vista panorámica al lago y cordillera.
+            </p>
+          </div>
+        </div>
+        <div class="project-card animate-on-scroll">
+          <img src="1775177805460.jfif" alt="Condominio Vista Cordillera II" loading="lazy">
+          <div class="project-card__overlay">
+            <span class="project-card__tag">Urbanización</span>
+            <h3 class="project-card__title">Condominio Vista Cordillera II</h3>
+            <p class="project-card__desc">Diseño y urbanización de condominio habitacional.</p>
+          </div>
+        </div>
+        <div class="project-card animate-on-scroll">
+          <img src="1775178077581.jfif" alt="Conjunto habitacional en construcción" loading="lazy">
+          <div class="project-card__overlay">
+            <span class="project-card__tag">Ingeniería</span>
+            <h3 class="project-card__title">Conjunto Habitacional</h3>
+            <p class="project-card__desc">Supervisión y desarrollo técnico de edificaciones.</p>
+          </div>
+        </div>
+        <div class="project-card project-card--wide animate-on-scroll">
+          <img src="1775177842498.jfif" alt="Complejo habitacional vista aérea" loading="lazy">
+          <div class="project-card__overlay">
+            <span class="project-card__tag">Arquitectura</span>
+            <h3 class="project-card__title">Complejo Habitacional — Vista Aérea</h3>
+            <p class="project-card__desc">Diseño arquitectónico y planificación de conjunto de edificios residenciales
+              de gran escala.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROCESO ========== -->
+  <section class="process" id="proceso">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag"><i class="fa-solid fa-arrows-spin"></i> Metodología</span>
+        <h2 class="section-title">Nuestro <span class="gradient-text">Proceso de Trabajo</span></h2>
+        <p class="section-desc">Una metodología probada que garantiza calidad, eficiencia y resultados en cada proyecto
+          que desarrollamos.</p>
+      </div>
+      <div class="process__timeline">
+        <div class="process-step animate-on-scroll">
+          <div class="process-step__number">1</div>
+          <div class="process-step__content">
+            <div class="process-step__icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+            <h3 class="process-step__title">Diagnóstico</h3>
+            <p class="process-step__desc">Evaluamos sus necesidades, analizamos el terreno, la normativa aplicable y las
+              condiciones del proyecto para definir la mejor estrategia.</p>
+          </div>
+        </div>
+        <div class="process-step animate-on-scroll">
+          <div class="process-step__number">2</div>
+          <div class="process-step__content">
+            <div class="process-step__icon"><i class="fa-solid fa-pen-ruler"></i></div>
+            <h3 class="process-step__title">Diseño</h3>
+            <p class="process-step__desc">Desarrollamos propuestas de diseño que integran funcionalidad, estética,
+              normativa y presupuesto en soluciones a medida.</p>
+          </div>
+        </div>
+        <div class="process-step animate-on-scroll">
+          <div class="process-step__number">3</div>
+          <div class="process-step__content">
+            <div class="process-step__icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <h3 class="process-step__title">Desarrollo Técnico</h3>
+            <p class="process-step__desc">Elaboramos planos, memorias, especificaciones y toda la documentación técnica
+              necesaria para permisos y construcción.</p>
+          </div>
+        </div>
+        <div class="process-step animate-on-scroll">
+          <div class="process-step__number">4</div>
+          <div class="process-step__content">
+            <div class="process-step__icon"><i class="fa-solid fa-flag-checkered"></i></div>
+            <h3 class="process-step__title">Ejecución / Entrega</h3>
+            <p class="process-step__desc">Supervisamos la implementación, coordinamos con los distintos actores y
+              entregamos un proyecto completo y listo para operar.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta" id="cta">
+    <div class="cta__bg-shapes">
+      <div class="cta__shape cta__shape--1"></div>
+      <div class="cta__shape cta__shape--2"></div>
+      <div class="cta__shape cta__shape--3"></div>
+    </div>
+    <div class="container cta__content animate-on-scroll">
+      <span class="cta__badge"><i class="fa-solid fa-rocket"></i> Comience hoy</span>
+      <h2 class="cta__title">Cotiza tu proyecto<br>con nosotros</h2>
+      <p class="cta__desc">Contáctenos para recibir una evaluación sin compromiso. Nuestro equipo de profesionales está
+        listo para asesorarlo en su próximo proyecto.</p>
+      <div class="cta__actions">
+        <a href="https://wa.me/56984135774" target="_blank" class="btn btn--primary btn--lg">
+          <i class="fa-brands fa-whatsapp"></i> Escribir por WhatsApp
+        </a>
+        <a href="mailto:andresmontielv@hotmail.com" class="btn btn--outline-light btn--lg">
+          <i class="fa-solid fa-envelope"></i> Enviar Email
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" id="contacto">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#" class="footer__logo">
+            <img src="logoam.png" alt="LogoA&M" class="footer__logo-img">
+          </a>
+          <p class="footer__tagline">Soluciones integrales en Arquitectura e Ingeniería. Diseñamos, proyectamos y
+            ejecutamos con precisión técnica en todo Chile.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer__links">
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="#servicios">Planos &amp; Proyectos</a></li>
+            <li><a href="#servicios">Arquitectura</a></li>
+            <li><a href="#servicios">Ingeniería Estructural</a></li>
+            <li><a href="#servicios">Ingeniería Sanitaria</a></li>
+            <li><a href="#servicios">Ingeniería Eléctrica</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="#nosotros">Sobre Nosotros</a></li>
+            <li><a href="#proceso">Proceso de Trabajo</a></li>
+            <li><a href="#cta">Cotizar Proyecto</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <h4>Contacto</h4>
+          <ul>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+56984135774">+56 9 8413 5774</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:andresmontielv@hotmail.com">andresmontielv@hotmail.com</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Curepto 1230, Puerto Montt, Chile</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-clock"></i>
+              <span>Lun - Vie: 09:00 - 18:00</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 A&M. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* ===== Mobile Nav ===== */
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('open');
+      navToggle.classList.toggle('active');
+    });
+    document.querySelectorAll('.navbar__menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('open');
+        navToggle.classList.remove('active');
+      });
+    });
+
+    /* ===== Sticky Navbar ===== */
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 80);
+    });
+
+    /* ===== Tabs ===== */
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+      });
+    });
+
+    /* ===== Scroll Animations ===== */
+    const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+    document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+    /* ===== Counter Animation ===== */
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const target = entry.target;
+          const count = parseInt(target.dataset.count);
+          let current = 0;
+          const step = Math.ceil(count / 60);
+          const timer = setInterval(() => {
+            current += step;
+            if (current >= count) { current = count; clearInterval(timer); }
+            target.textContent = current;
+          }, 25);
+          counterObserver.unobserve(target);
+        }
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('.hero__stat-number').forEach(el => counterObserver.observe(el));
+
+    /* ===== Smooth Scroll ===== */
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
